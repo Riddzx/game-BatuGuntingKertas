@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Sederhana</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h2>Game Batu Gunting & Kertas</h2>
+        <h3>Silahkan pilih pilihan anda !</h3>
+      </div>
+      <div class="tombol">
+        <button id="batuButton" class="button" onclick="play('batu')  ">
+          Batu
+        </button>
+        <button id="guntingButton" class="button" onclick="play('gunting')">
+          Gunting
+        </button>
+        <button id="kertasButton" class="button" onclick="play('kertas')">
+          Kertas
+        </button>
+        <button id="replayButton" class="button hidden" onclick="replay()">
+          Replay
+        </button>
+      </div>
+      <div id="resultText" class="hidden"></div>
+      <div class="img">
+        <!-- Foto contoh -->
+        <img src="img/rock.jpg" alt="" class="contoh" />
+        <img src="img/scisscor.jpg" alt="" class="contoh" />
+        <img src="img/paper.jpg" alt="" class="contoh" />
+
+        <!-- Foto playerChoice -->
+        <img src="" alt="" class="player-choice foto hidden" />
+        <!-- Foto komputer (comp) -->
+        <img src="" alt="" class="comp-choice foto hidden" />
+        <!-- Foto hasil (dapat diisi dengan foto default atau kosong) -->
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
