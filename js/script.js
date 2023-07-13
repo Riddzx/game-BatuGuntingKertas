@@ -7,7 +7,7 @@ var playerChoice;
 var resultText = document.getElementById("resultText");
 var replayButton = document.getElementById("replayButton");
 var fotoElements = document.getElementsByClassName("foto");
-var contohElement = document.getElementsByClassName("contoh");
+var contohElement = document.querySelectorAll(".contoh");
 
 function play(choice) {
   playerChoice = choice;
@@ -51,8 +51,8 @@ function play(choice) {
   }
 
   // Sembunyikan foto contoh
-  for (var i = 0; i < contohElement.length; i++) {
-    contohElement[i].classList.add("hidden");
+  for (var element of contohElement) {
+    element.classList.add("hidden");
   }
 }
 
